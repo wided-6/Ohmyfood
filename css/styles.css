@@ -145,6 +145,9 @@ main {
     padding-left: 10px;
     padding-right: 10px;
 }
+.filtre-p-animaux {
+    width: 150px;
+}
 
 .info {
     height: 50px;
@@ -177,54 +180,66 @@ main {
     font-size: 81%;
 
 }
-
-.hotel-result {
+.hotel {
     display: flex;
 }
 
 .hebergement {
     background-color: #F2F2F2;
-    width: 60%;
+    width: 62%;
     border-radius: 15px 15px 15px 15px;
+    padding: 1% 3%;
 }
 
 .conteneur-ligne {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 2%;
 }
 
-.hotel-result h3 {
-      padding-top: 15px;
-      margin-left: 25px;
+
+.hotel h3 {
+    padding-top: 15px;
+    margin-left: 25px;
 }
 
-.hotel-result h5 {
-    margin-right: 5px;
-}
+
 
 .hebergement img {
-    width: 200px;
-    height: 100px;
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
     border-radius: 25px 25px 0px 0px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
 }
 
 .conteneur-img-1 {
-    width: 210px;
-    height: 235px;
-    margin-left: 25px;
-    margin-bottom: 25px;
-    border-radius: 15px 15px 15px 15px;
+    width: 30%;
+    border-radius: 25px 25px 25px 25px;
     background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin-bottom: 2%;
 }
 
 .text-img {
     margin-left: 10px;
 }
 
+.text-img h3 {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 .text-img p {
-    font-weight: 200;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .star .blue {
@@ -235,29 +250,139 @@ main {
     color: lightgrey;
 }
 
+.afficher-plus {
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.afficher-plus:hover {
+    color: #0065FC;
+    text-decoration: underline;
+}
+
 .plus-populaires {
     background-color: #F2F2F2;
-    width: 40%;
-    margin-left: 90px;
+    width: 30%;
+    margin-left: 3%;
     border-radius: 15px 15px 15px 15px;
 }
 
+.plus-populaires h2 {
+    padding-left: 5%;
+}
+
 .conteneur-img-2 {
-    width: 350px;
-    height: 150px;
+    width: 90%;
     margin-left: 25px;
     margin-bottom: 25px;
     border-radius: 15px 15px 15px 15px;
     background-color: white;
     display: flex;
+    text-decoration: none;
+    color: black;
 }
 
-
+.pop-img {
+    width: 40%;
+   }
+.pop-2 {
+    width: 200px;
+  }
 .plus-populaires img {
-    width: 150px;
+    width: 100%;
     height: 140px;
     border-radius: 25px 0px 0px 25px;
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 5px;
+   }
+   .activity h2 {
+    margin: 40px 0 30px 0;   
+  }
+
+.activity {
+    margin-top:  80px;
+   
+  }
+
+.ligne-act {
+    display: flex;
+    gap: 5%;
 }
+
+.gap-5 {
+    gap: 5%;
+}
+
+.bloc-act {
+    width: 20%;
+    height: 450px;
+}
+
+.height-50 {
+    height: 50%;
+}
+
+.height-30 {
+    height: 30%;
+}
+
+.activity img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.height-90 {
+    height: 90%;
+   }
+
+.padding-bottom-20 {
+    padding-bottom: 20%;
+}
+
+.conteneur-img-act {
+    background-color: white;
+    border-radius: 25px 25px 25px 25px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.062);
+}
+
+.text-act {
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .section-footer {
+    width: 30%;
+    padding-left: 3%;
+  }
+
+  .bloc-footer {
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+    background: #F2F2F2;
+   
+  }
+
+.bloc-footer ul {
+    list-style: none;
+    padding-left: 0%;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: black;
+  }
+  
+    
+   
+   
+ 
