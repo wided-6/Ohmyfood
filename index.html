@@ -20,17 +20,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
           integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <title>Agence de voyage Booki</title>
 </head>
 
 <body>
     <header>
-
         <div id="div-logo" class="item">
             <img id="logo" alt="logo Booki" src="images/logo/Booki.png"/>
         </div>
-        <nav class=" item menu">
+        <nav class="item menu">
             <ul>
                 <li><a href="#">Hébergements</a></li>
                 <li><a href="#"> Activités</a></li>
@@ -39,13 +40,14 @@
     </header>
     <main>
         <Section class="search-destination">
-            <h1 g>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
             <form action="index.html">
                 <span class="fa fa-map-marker-alt">
                 </span>
                 <input type="text" name="ville" id="ville" placeholder="Marseille, France">
                 <button></button>
+                <i class="fas fa-search"></i>
             </form>
 
             <div class="filtres">
@@ -83,7 +85,7 @@
         </section>
         
         <Section class="hotel">
-                <div class="hebergement">
+                <div class="hebergement" id="hebergements">
                     <h2>Hébergements à Marseille</h2>
                     <div class="conteneur-ligne">
                         <a href="#" class="conteneur-img-1">
@@ -194,8 +196,10 @@
                             <img src="images/hebergements/4_small/hotel-le-soleil-du-matin.jpg" alt="photo de Hôtel le soleil du matin" title="Cliquez pour agrandir"/>
                         </div>
                         <div class="text-img">
-                            <h3>Hôtel Le soleil du matin</h3>
-                            <p>Nuit à partir de <strong>218€</strong></p>
+                            <div>
+                                <h3>Hôtel Le soleil du matin</h3>
+                                <p>Nuit à partir de <strong>218€</strong></p>
+                            </div>
                             <div class="star">
                                 <i class="fas fa-star blue" ></i>
                                 <i class="fas fa-star blue"></i>
@@ -210,8 +214,10 @@
                             <img src="images/hebergements/4_small/hotel-au-coeur-de-leau.jpg" alt="photo de Hôtel au coeur de l'eau" title="Cliquez pour agrandir"/>
                         </div>
                         <div class="text-img">
+                            <div>
                             <h3 class="pop-2">Au coeur de l'eau Chambres d'hôtes</h3>
                             <p>Nuit à partir de 71<strong>€</strong></p>
+                            </div>
                             <div class="star">
                                 <i class="fas fa-star blue" ></i>
                                 <i class="fas fa-star blue"></i>
@@ -226,8 +232,10 @@
                             <img src="images/hebergements/4_small/hotel-tout-bleu-et-blanc.jpg" alt="photo de Hôtel tout bleu et blanc" title="Cliquez pour agrandir"/>
                         </div>
                         <div class="text-img">
+                            <div>
                             <h3>Hôtel Tout Bleu et Blanc</h3>
                             <p>Nuit à partir de 76<strong>€</strong></p>
+                            </div>
                             <div class="star">
                                 <i class="fas fa-star blue" ></i>
                                 <i class="fas fa-star blue"></i>
@@ -239,7 +247,7 @@
                     </a>
                 </div>
         </Section>
-        <section class="activity">
+        <section class="activity" id="activites">
             <h2>Activités à Marseille</h2>
             <div class="ligne-act">
                 <a href="#" class="conteneur-img-act bloc-act">
@@ -308,7 +316,7 @@
     <footer>
         <div class="bloc-footer">
             <div class="section-footer">
-                <h4>A propos</h4>
+                <h3>A propos</h3>
                 <ul>
                     <li><a href="#">Fonctionnement du site</a></li>
                     <li><a href="#">Conditions générales de vente</a></li>
@@ -317,7 +325,7 @@
                 
             </div>
             <div class="section-footer">
-                <h4>Nos hébergement</h4>
+                <h3>Nos hébergement</h3>
                 <ul>
                     <li><a href="#">Charte qualité</a></li>
                     <li><a href="#">Soumettre votre hôtel</a></li>
@@ -325,7 +333,7 @@
             
             </div>
             <div class="section-footer">
-                <h4>Assistance</h4>
+                <h3>Assistance</h3>
                 <ul>
                     <li><a href="#">Centre d'aide</a></li>
                     <li><a href="#">Nous contacter</a></li>
