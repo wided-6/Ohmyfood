@@ -400,95 +400,60 @@ main {
     color: #0065FC;
 }
 
-@media screen and (max-width: 1200px) {
+/* Version Mobile */
+@media screen and (max-width: 768px) {
 
-    /*search-destination*/
-    h1 {
-          font-size: 20px;
-      }
-  
-      .search-destination p {
-        font-size: 15px;
-    }
-      
-      /*filters*/
-  
-      .filtre {
-        margin-right: 2%;
-      }
-  
-      .filtres h2 {
-          font-size: 15px;
-          margin-right: 1%;
-        }
-        
-     /*hebergement*/
-     .hebergement {
-        width: 52%;
+    header {
+        width: 100%;
+        flex-direction: column;
     }
 
-     .conteneur-img-1 {
-        width: 45%;
+    #div-logo {
+        display: flex;
+        justify-content: center;
     }
 
-    .plus-populaires {
-        width: 40%;
-    }
-
-    /*activité*/
-    .height-90 {
-        height: 85%;
-       }
-    
-  /*bloc-footer*/
-  
-  }
-   
-  @media screen and (max-width: 441px) {
-
-    main {
+    nav.menu {
         width: 100%;
     }
 
-    /*header*/
-    header {
-        display: block;
-        /*flex-wrap: wrap;*/
+    nav.menu ul {
+        width: 100%;
     }
 
-    #logo {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
+    nav.menu ul li {
+        width: 50%;
     }
 
-    .menu {
-        margin-left: 10%;
-        margin-right: 10%;
-        display: block;
+    nav.menu ul li a {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        border-bottom: 3px solid #F2F2F2;
     }
 
     nav.menu ul li a:hover {
         border-top: none;
         border-bottom: 3px solid #0065FC;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
-
     /*search-destination*/
-    .search-destination  {
-        margin-left: 5%;
-    }
-
-    .search-destination h1 {
-        font-size: 30px;
-    }
-    .search-destination > p {
-        font-size: 15px;
-    }
-
+    h1 {
+    font-size: 15px;
+    } 
     .search-destination form button::before {
         content: none;
+    }  
+    .search-destination form input {
+       
+        font-size: 22px;   
     }
-
     .search-destination  .fa-search{
         display: flex;
         justify-content: center;
@@ -498,22 +463,20 @@ main {
         color: white;
         cursor: pointer;
         width: 50px;
-        margin-left: -30px;
-      }
-      
-    /*filters*/
-    .filtres {
+        margin-left: -50px;
+      } 
+      /*filters*/
+      .filtres {
         display: block;
         flex-direction: column;
     }
 
-    .conteneur-filtres { 
-       width: 90%;
-       margin-left: 5px;
-    }
-
-     
-        
+    /*info*/
+    .info-section p{
+        font-size: 80%;
+      }
+   
+      
     /*hebergement*/
     .hotel {
         flex-direction: column-reverse;
@@ -534,42 +497,52 @@ main {
         object-fit: cover;
         height: 180px;
     }
-
     /*plus-populaires*/
     .plus-populaires {
-        width: 105%;
-        margin-left: 0;
+        width: 90%;
+        margin-left: 0%;
         margin-bottom: 20px;
-        /*height: 600px;*/
+        border-radius: 0;
+        
     }
-
+    
+   
     .plus-populaires img {
-        height: 170px;
+        height: 150px;
+       
        }
-
-    /*activité*/
+    
+       /*activité*/
 
     .activity {
-       margin-left: 5%;
-   }
-
-    .ligne-act {
+        margin-left: 5%;
+    }
+ 
+     .ligne-act {
+         flex-direction: column;
+         width: 90%;
+    }
+ 
+    .bloc-act {
+     width: 100%;
+     margin-bottom: 20px;
+    }
+      
+    .conteneur-img-act{
+        height: 210px;
+        width: 100%;
+    }
+    
+    /* FOOTER */
+    .bloc-footer{
         flex-direction: column;
-        width: 90%;
-   }
+    }
 
-   .bloc-act {
-    width: 100%;
-    margin-bottom: 20px;
-   }
+    .section-footer{
+        width: 100%;
+    }
 
-   
-    /*bloc-footer*/
-    .bloc-footer {
-        flex-direction: column;
-      }
 
-      .section-footer {
-        width: 90%;
-      }
-  }
+}
+/* Version Mobile */
+@media screen and (max-width: 992px) and (min-width: 768px) {}
