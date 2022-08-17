@@ -98,6 +98,10 @@ main {
     content: "Rechercher";
 }
 
+.search-destination form .fa-search {
+    display: none;
+  } 
+
 .filtres {
     display: flex;
     align-items: center;
@@ -443,18 +447,29 @@ main {
         display: flex;
         justify-content: center;
     }
+
+    /*main*/
+    main {
+        width: 100%;
+    }
+
     /*search-destination*/
-    h1 {
-    font-size: 15px;
+    .search-destination  {
+        width: 95%;
+        margin: auto;
     } 
+
+    .search-destination  h1 {
+        font-size: 30px;
+    }
     .search-destination form button::before {
         content: none;
-    }  
+    }
     .search-destination form input {
        
         font-size: 22px;   
     }
-    .search-destination  .fa-search{
+    .search-destination form .fa-search{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -465,27 +480,42 @@ main {
         width: 50px;
         margin-left: -50px;
       } 
-      /*filters*/
-      .filtres {
+    /*filters*/
+    .filtres h2 {
+       font-size: 20px;
+    }
+    .filtres {
         display: block;
         flex-direction: column;
     }
-
+    .conteneur-filtres {
+        flex-wrap: wrap;
+    }
+    .conteneur-filtres a {
+        margin-bottom: 2%;
+    }
     /*info*/
-    .info-section p{
-        font-size: 80%;
+    .info-section {
+        margin-top: 15%;
+    }
+    
+    .info-section p {
+        font-size: 100%;
       }
-   
+     
+    
+    .info-section i {
+       font-size: 80%;
+    }
       
     /*hebergement*/
     .hotel {
         flex-direction: column-reverse;
-        
     }
 
     .hebergement {
         width: 95%;
-       
+        background: none;
     }
 
     .conteneur-img-1 {
@@ -499,17 +529,15 @@ main {
     }
     /*plus-populaires*/
     .plus-populaires {
-        width: 90%;
-        margin-left: 0%;
-        margin-bottom: 20px;
+        margin-top: 20px;
         border-radius: 0;
-        
+        width: 105%;
+        margin-left: 0;
     }
     
    
     .plus-populaires img {
         height: 150px;
-       
        }
     
        /*activité*/
@@ -545,4 +573,24 @@ main {
 
 }
 /* Version Mobile */
-@media screen and (max-width: 992px) and (min-width: 768px) {}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    /*header*/
+    .plus-populaires{
+        width: 45%;
+        height: 50%;
+    }
+
+     /*hebergement*/
+    .conteneur-img-1 {
+        width: 40%;
+    }
+
+    .conteneur-filtres {
+        flex-wrap: wrap;
+    }
+
+    .conteneur-filtres a {
+        margin-bottom: 2%;
+    }
+}
+
