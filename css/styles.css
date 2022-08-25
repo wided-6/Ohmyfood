@@ -227,7 +227,7 @@ main {
 }
 
 .conteneur-img-1 {
-    width: 30%;
+    width: 25%;
     border-radius: 25px 25px 25px 25px;
     background-color: white;
     text-decoration: none;
@@ -281,18 +281,24 @@ main {
 
 .plus-populaires {
     background-color: #F2F2F2;
-    width: 30%;
+    /* width: 30%; */
     margin-left: 3%;
     border-radius: 15px 15px 15px 15px;
+    padding: 1% 2%;
+}
+.plus-populaires .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.plus-populaires h2 {
+/* .plus-populaires h2 {
     padding-left: 5%;
-}
+} */
 
 .conteneur-img-2 {
-    width: 90%;
-    margin-left: 25px;
+    width: 100%;
+    /* margin: auto;    */
     margin-bottom: 25px;
     border-radius: 15px 15px 15px 15px;
     background-color: white;
@@ -301,79 +307,108 @@ main {
     color: black;
 }
 
-.pop-img {
-    width: 40%;
-   }
+/* .pop-img {
+    width: 130px;
+} */
+
 .pop-2 {
     width: 200px;
-  }
+}
+
 .plus-populaires img {
-    width: 100%;
-    height: 140px;
-    border-radius: 25px 0px 0px 25px;
+    width: 130px;
+    height: 110px;
+    border-radius: 15px 0px 0px 15px;
     margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
-   }
-   .activity h2 {
-    margin: 40px 0 30px 0;   
-  }
+    object-fit: cover;
+}
 
-.activity {
-    margin-top:  80px;
-   
-  }
+   /* Actitités */
 
-.ligne-act {
+.activites {
+    width: 100%;
+}
+
+.activites-card {
+    width: 100%;
     display: flex;
-    gap: 3%;
+    justify-content: space-between;
 }
 
-.gap-5 {
-    gap: 5%;
+.activite-colonne {
+    width: 22%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.bloc-act {
-    width: 25%;
+/* Ligne */
+
+.activite-ligne {
+    width: 100%;
+    height: 100%;
+}
+
+.activite-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.activite-ligne .activite-card .activite-card-image {
+    width: 100%;
     height: 450px;
 }
 
-.height-50 {
-    height: 50%;
-}
-
-.height-30 {
-    height: 30%;
-}
-
-.activity img {
+.activite-card .activite-card-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 15px 15px 0 0;
+    border-radius: 25px 25px 0 0;
 }
 
-.height-90 {
-    height: 90%;
-   }
-
-.padding-bottom-20 {
-    padding-bottom: 20%;
+.activite-card .activite-card-details {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
 }
 
-.conteneur-img-act {
-    background-color: white;
-    border-radius: 25px 25px 25px 25px;
-    text-decoration: none;
-    color: black;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.062);
+/* Linge 1 */
+
+.activite-ligne-1 {
+    width: 100%;
+    height: 290px;
 }
 
-.text-act {
-    font-weight: 600;
-    margin-left: 20px;
-    margin-top: 10px;
-  }
+.activite-ligne-1 .activite-card .activite-card-image {
+    width: 100%;
+    height: 240px;
+}
+
+/* Linge 2 */
+
+.activite-ligne-2 {
+    width: 100%;
+    height: 200px;
+}
+
+.activite-ligne-2 .activite-card .activite-card-image {
+    width: 100%;
+    height: 150px;
+}
+
+
+/* Footer */
+
+   
   
   .section-footer {
     width: 30%;
@@ -490,13 +525,18 @@ main {
     }
     .conteneur-filtres {
         flex-wrap: wrap;
+        
+    }
+    .conteneur-filtres {
+        height: 100%;
+        
     }
     .conteneur-filtres a {
         margin-bottom: 2%;
     }
     /*info*/
     .info-section {
-        margin-top: 15%;
+        margin-top: 0%;
     }
     
     .info-section p {
@@ -531,42 +571,58 @@ main {
     .plus-populaires {
         margin-top: 20px;
         border-radius: 0;
-        width: 105%;
+        width: 100%;
         margin-left: 0;
     }
-    
+    .plus-populaires .title {
+        width: 95%;
+    }
+    .conteneur-img-2 {
+        width: 95%;
+    }
    
     .plus-populaires img {
         height: 150px;
        }
     
        /*activité*/
-
-    .activity {
-        margin-left: 5%;
-    }
- 
-     .ligne-act {
-         flex-direction: column;
-         width: 90%;
-    }
- 
-    .bloc-act {
-     width: 100%;
-     margin-bottom: 20px;
-    }
-      
-    .conteneur-img-act{
-        height: 210px;
-        width: 100%;
-    }
     
+    .activites {
+        width: 95%;
+        margin: auto;
+    }
+     .activites-card {
+        flex-direction: column;
+    }
+    .activite-colonne {
+        width: 100%;
+        height: 100%;
+    }
+    .activite-colonne .activite-card {
+        height: 200px;
+        margin-top: 20px;
+    }
+    .activite-ligne .activite-card .activite-card-image {
+        width: 100%;
+        height: 75%;
+    }
+    .activite-ligne-1 {
+        height: 100%;
+    }
+    .activite-ligne-2 {
+        height: 100%;
+    }
+    .activite-ligne-1 .activite-card .activite-card-image {
+        width: 100%;
+        height: 75%;
+    }
+     
     /* FOOTER */
     .bloc-footer{
         flex-direction: column;
     }
 
-    .section-footer{
+    .section-footer {
         width: 100%;
     }
 
@@ -575,22 +631,50 @@ main {
 /* Version Mobile */
 @media screen and (max-width: 992px) and (min-width: 768px) {
     /*header*/
-    .plus-populaires{
-        width: 45%;
-        height: 50%;
-    }
-
-     /*hebergement*/
-    .conteneur-img-1 {
-        width: 40%;
-    }
-
-    .conteneur-filtres {
-        flex-wrap: wrap;
-    }
-
+    /*filte*/
     .conteneur-filtres a {
         margin-bottom: 2%;
     }
+    .filtres {
+        display: block;
+        flex-direction: column;
+    }
+    .conteneur-filtres {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    /*info*/
+    .info-section {
+        margin-top: 15px;
+    }
+    
+     /*hebergement*/
+     .hebergement {
+        width: 90%;  
+    }
+    
+   .conteneur-ligne {
+      width: 100%;
+   }
+    .hotel {
+        flex-direction: column;
+    }
+    .plus-populaires {
+        width: 90%;
+        margin-left: 0;
+        padding: 1% 3%;
+        margin-top: 30px;
+     }
+    /*activite*/
+  
+   .activites-card {
+    width: 100%;
+    flex-wrap: wrap;
+   }
+   .activite-colonne {
+    width: 45%;
+    margin-top: 20px;
+   }
+  
+    
 }
-
