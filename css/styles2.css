@@ -1,0 +1,23 @@
+/*main*/
+/*header*/
+.header {
+    display: flex;
+    width: 90%;
+}
+
+.header img {
+    display: flex;
+    justify-content: center;
+    background-color:  #EFEFEF;
+    height:200px;
+
+
+}
+
+.restaurants img {
+    width:150%;
+    height:500px;
+
+    object-fit: cover;
+    
+}
