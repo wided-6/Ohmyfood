@@ -1,21 +1,919 @@
-/*main*/
+html {
+    scroll-behavior: smooth;
+}
+ 
+
+body {
+    font-family: 'Roboto';
+    width: 100%;
+    margin: 0%;
+}
+
+main {
+    background-color: #F6F6F6;
+}
+
+/* Version  Desktop */
+@media screen and (min-width: 992px) {
+
 /*header*/
 .header {
+    background-color: #fff;   
+}
+.header h1 {
+    margin-top:10px;
+    padding: 0px;
+    font-family: Shrikhand;
+    font-size: 30px;
+    color: #000;
+}
+.header .title-container {
     display: flex;
-    width: 90%;
+    justify-content: center;
+    height: 80px;
 }
 
 .header img {
-    display: flex;
-    justify-content: center;
-    background-color:  #EFEFEF;
-    height:200px;
+    height: 340px;
+    width: 100%;
+    object-fit: cover;
 }
 
-.restaurants img {
-    width:150%;
-    height:500px;
-
-    object-fit: cover;
+/* menu */
+.menu {
+   
+    display: flex;
+    background-color: #F6F6F6;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    top: -70px;
+   
+}
+.menu-container {
     
+    width: 95%;
+    margin: auto;
+
+}
+.food{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+  
+}
+
+.menu .menu-container > .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu h2 {
+    font-family: "Shrikhand";
+    font-size: 30px;
+    font-style: italic;
+}
+.menu h3 {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 100;
+    color: #000;
+}
+.menu .fa-heart {
+    font-size: 30px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+.fas {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+}
+.fa-arrow-left {
+    position: relative;
+    top: 20px;
+    right: 45px;
+    font-size: x-large;
+}
+
+.far {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+}
+
+/*entrees*/
+.entrees-container{
+    width: 30%;
+}
+.entrees-container .title div {
+    height: 2px;
+    width: 7%;
+    background-color: #99e2d0;
+    margin-top: 15px;
+}
+
+.entree-container {
+    background-color: white;
+    box-shadow: 6px 6px 26px lightgrey;
+    border-radius: 15px;
+    margin-top:10px ;
+    cursor: pointer;
+}
+
+.entree {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.entree h4 {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family:" Roboto";
+    font-weight: bold;
+    
+}
+
+.entree h5 {
+   margin-top: 0;
+   font-family: "Roboto";
+   font-weight: 100;
+  
+}
+
+.entree p {
+    margin-top: 0;
+    font-weight: bold;
+   
+ }
+
+
+ /*plats*/
+ .plats-container{
+    width: 30%;
+ }
+.plats-container .title div {
+    height: 2px;
+    width: 7%;
+    background-color: #99e2d0;
+    margin-top: 15px;
+}
+
+.plat-container {
+    background-color: white;
+    box-shadow: 6px 6px 26px lightgrey;
+    border-radius: 15px;
+    margin-top:10px ;
+    cursor: pointer;
+}
+
+.plat {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.plat h4 {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family:" Roboto";
+    font-weight: bold;
+}
+
+.plat h5 {
+   margin-top: 0;
+   font-family: "Roboto";
+   font-weight: 100;
+}
+
+.plat p {
+    margin-top: 0;
+ }
+
+ .plat .price{
+    font-weight: bold;
+ }
+
+ /*desserts*/
+ .desserts-container{
+    width: 30%;
+ }
+.desserts-container .title div {
+    height: 2px;
+    width: 7%;
+    background-color: #99e2d0;
+    margin-top: 15px;
+}
+
+.dessert-container {
+    background-color: white;
+    box-shadow: 6px 6px 26px lightgrey;
+    border-radius: 15px;
+    margin-top:10px ;
+    cursor: pointer;
+}
+
+.dessert {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dessert h4 {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family:" Roboto";
+    font-weight: bold;
+}
+
+.dessert h5 {
+   margin-top: 0;
+   font-family: "Roboto";
+   font-weight: 100;
+}
+.dessert .price{
+    font-weight: bold;
+}
+
+.dessert p {
+    margin-top: 0;
+ }
+
+ .dessert .price{
+    font-weight: bold;
+ }
+ /*bouton*/
+
+ .btn-commander {
+    margin-bottom: 30px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+ }
+
+.menu .bouton {
+    background: linear-gradient( 170deg , #ff79da, #9356dc);
+    color: white;
+    font-size: large;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    box-shadow: 4px 4px 2px lightgrey;
+    padding: 1rem;
+    cursor: pointer;
+    width: 30%;
+}
+/* Footer */
+
+footer {
+    background:#303030;
+}
+
+.bloc-footer {
+    display: flex;
+    margin-top: 100px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    margin-top: 5px;
+
+    }
+
+.bloc-footer ul {
+    list-style: none;
+    padding-left: 0%;
+  }
+
+.bloc-footer ul li {
+    margin: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    margin-left: 2px;
+    
+  }
+
+
+.section-footer h2 { 
+    font-family: "Shrikhand";
+    font-style: italic;
+    color: white;
+    font-size: 20px;
+    
+}
+.section-footer .icon {
+   color: white;
+   
+}
+}
+
+/* Version  Tablette */
+@media screen and (max-width: 992px) and (min-width: 768px) {
+
+    /*header*/
+.header {
+    background-color: #fff;   
+}
+.header h1 {
+    margin-top:10px;
+    padding: 0px;
+    font-family: Shrikhand;
+    font-size: 30px;
+    color: #000;
+}
+.header .title-container {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+
+.header img {
+    height: 340px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* menu */
+.menu {
+   
+    display: flex;
+    background-color: #F6F6F6;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    top: -70px;
+   
+}
+.menu-container {
+    
+    width: 95%;
+    margin: auto;
+
+}
+.food{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+  
+}
+
+.menu .menu-container > .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu h2 {
+    font-family: "Shrikhand";
+    font-size: 30px;
+    font-style: italic;
+}
+.menu h3 {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 100;
+    color: #000;
+}
+.menu .fa-heart {
+    font-size: 30px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+.fas {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+}
+.fa-arrow-left {
+    position: relative;
+    top: 20px;
+    right: 45px;
+    font-size: x-large;
+}
+
+.far {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+}
+
+/*entrees*/
+.entrees-container{
+    width: 45%;
+}
+.entrees-container .title div {
+    height: 2px;
+    width: 7%;
+    background-color: #99e2d0;
+    margin-top: 15px;
+}
+
+.entree-container {
+    background-color: white;
+    box-shadow: 6px 6px 26px lightgrey;
+    border-radius: 15px;
+    margin-top:10px ;
+    cursor: pointer;
+}
+
+.entree {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.entree h4 {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family:" Roboto";
+    font-weight: bold;
+    
+}
+
+.entree h5 {
+   margin-top: 0;
+   font-family: "Roboto";
+   font-weight: 100;
+  
+}
+
+.entree p {
+    margin-top: 0;
+    font-weight: bold;
+   
+ }
+
+
+ /*plats*/
+ .plats-container{
+    width: 45%;
+ }
+.plats-container .title div {
+    height: 2px;
+    width: 7%;
+    background-color: #99e2d0;
+    margin-top: 15px;
+}
+
+.plat-container {
+    background-color: white;
+    box-shadow: 6px 6px 26px lightgrey;
+    border-radius: 15px;
+    margin-top:10px ;
+    cursor: pointer;
+}
+
+.plat {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.plat h4 {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family:" Roboto";
+    font-weight: bold;
+}
+
+.plat h5 {
+   margin-top: 0;
+   font-family: "Roboto";
+   font-weight: 100;
+}
+
+.plat p {
+    margin-top: 0;
+ }
+
+ .plat .price{
+    font-weight: bold;
+ }
+
+ /*desserts*/
+ .desserts-container{
+    width: 50%;
+    margin: auto;
+ }
+.desserts-container .title div {
+    height: 2px;
+    width: 7%;
+    background-color: #99e2d0;
+    margin-top: 15px;
+}
+
+.dessert-container {
+    background-color: white;
+    box-shadow: 6px 6px 26px lightgrey;
+    border-radius: 15px;
+    margin-top:10px ;
+    cursor: pointer;
+}
+
+.dessert {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dessert h4 {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family:" Roboto";
+    font-weight: bold;
+}
+
+.dessert h5 {
+   margin-top: 0;
+   font-family: "Roboto";
+   font-weight: 100;
+}
+.dessert .price{
+    font-weight: bold;
+}
+
+.dessert p {
+    margin-top: 0;
+ }
+
+ .dessert .price{
+    font-weight: bold;
+ }
+ /*bouton*/
+
+ .btn-commander {
+    margin-bottom: 30px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+ }
+
+.menu .bouton {
+    background: linear-gradient( 170deg , #ff79da, #9356dc);
+    color: white;
+    font-size: large;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    box-shadow: 4px 4px 2px lightgrey;
+    padding: 1rem;
+    cursor: pointer;
+    width: 30%;
+}
+/* Footer */
+
+footer {
+    background:#303030;
+}
+
+.bloc-footer {
+    display: flex;
+    margin-top: 100px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    margin-top: 5px;
+
+    }
+
+.bloc-footer ul {
+    list-style: none;
+    padding-left: 0%;
+  }
+
+.bloc-footer ul li {
+    margin: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    margin-left: 2px;
+    
+  }
+
+
+.section-footer h2 { 
+    font-family: "Shrikhand";
+    font-style: italic;
+    color: white;
+    font-size: 20px;
+    
+}
+.section-footer .icon {
+   color: white;
+   
+}
+}
+
+/* Version  Mobile */
+@media screen and (max-width: 768px) {
+/*main*/
+
+
+/*header*/
+.header {
+    background-color: #fff;   
+}
+.header h1 {
+    margin-top:10px;
+    padding: 0px;
+    font-family: Shrikhand;
+    font-size: 30px;
+    color: #000;
+}
+.header .title-container {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+
+.header img {
+    height: 340px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* menu */
+.menu {
+    background-color: #F6F6F6;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    top: -70px;
+}
+.menu-container {
+    width: 90%;
+    margin: auto;
+}
+
+.menu .menu-container > .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu h2 {
+    font-family: "Shrikhand";
+    font-size: 30px;
+    font-style: italic;
+}
+.menu h3 {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 100;
+    color: #000;
+}
+.menu .fa-heart {
+    font-size: 30px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+.fas {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+}
+.fa-arrow-left {
+    position: relative;
+    top: 20px;
+    right: 45px;
+    font-size: x-large;
+}
+
+.far {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+}
+
+/*entrees*/
+.entrees-container .title div {
+    height: 2px;
+    width: 7%;
+    background-color: #99e2d0;
+    margin-top: 15px;
+}
+
+.entree-container {
+    background-color: white;
+    box-shadow: 6px 6px 26px lightgrey;
+    border-radius: 15px;
+    margin-top:40px ;
+    cursor: pointer;
+}
+
+.entree {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.entree h4 {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family:" Roboto";
+    font-weight: bold;
+    
+}
+
+.entree h5 {
+   margin-top: 0;
+   font-family: "Roboto";
+   font-weight: 100;
+  
+}
+
+.entree p {
+    margin-top: 0;
+    font-weight: bold;
+   
+ }
+
+
+ /*plats*/
+.plats-container .title div {
+    height: 2px;
+    width: 7%;
+    background-color: #99e2d0;
+    margin-top: 15px;
+}
+
+.plat-container {
+    background-color: white;
+    box-shadow: 6px 6px 26px lightgrey;
+    border-radius: 15px;
+    margin-top:40px ;
+    cursor: pointer;
+}
+
+.plat {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.plat h4 {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family:" Roboto";
+    font-weight: bold;
+}
+
+.plat h5 {
+   margin-top: 0;
+   font-family: "Roboto";
+   font-weight: 100;
+}
+
+.plat p {
+    margin-top: 0;
+ }
+.plat .price{
+    font-weight: bold;
+}
+
+ /*desserts*/
+.desserts-container .title div {
+    height: 2px;
+    width: 7%;
+    background-color: #99e2d0;
+    margin-top: 15px;
+}
+
+.dessert-container {
+    background-color: white;
+    box-shadow: 6px 6px 26px lightgrey;
+    border-radius: 15px;
+    margin-top:40px ;
+    cursor: pointer;
+}
+
+.dessert {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dessert h4 {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family:" Roboto";
+    font-weight: bold;
+}
+
+.dessert h5 {
+   margin-top: 0;
+   font-family: "Roboto";
+   font-weight: 100;
+}
+
+.dessert p {
+    margin-top: 0;
+ }
+.dessert .price{
+    font-weight: bold;
+}
+ /*bouton*/
+
+ .btn-commander {
+    margin-bottom: -20px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+ }
+
+.menu .bouton {
+    background: linear-gradient( 170deg , #ff79da, #9356dc);
+    color: white;
+    font-size: large;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    box-shadow: 4px 4px 2px lightgrey;
+    padding: 1rem;
+    cursor: pointer;
+    width: 50%;
+}
+/* Footer */
+
+footer {
+    background:#303030;
+}
+
+.bloc-footer {
+    display: flex;
+    margin-top: 100px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    margin-top: 0px;
+
+    }
+
+.bloc-footer ul {
+    list-style: none;
+    padding-left: 0%;
+  }
+
+.bloc-footer ul li {
+    margin: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    margin-left: 2px;
+    
+  }
+
+
+.section-footer h2 { 
+    font-family: "Shrikhand";
+    font-style: italic;
+    color: white;
+    font-size: 20px;
+    
+}
+.section-footer .icon {
+   color: white;
+   
+}
 }
