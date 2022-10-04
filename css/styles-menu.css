@@ -23,7 +23,7 @@ main {
 .header h1 {
     margin-top:10px;
     padding: 0px;
-    font-family: Shrikhand;
+    font-family: 'Shrikhand';
     font-size: 30px;
     color: #000;
 }
@@ -31,6 +31,12 @@ main {
     display: flex;
     justify-content: center;
     height: 80px;
+    position: relative;
+}
+
+.header a {
+    position: absolute;
+    left: 5em;
 }
 
 .header img {
@@ -70,7 +76,7 @@ main {
 }
 .menu h2 {
     font-family: "Shrikhand";
-    font-size: 30px;
+    font-size: 25px;
     font-style: italic;
 }
 .menu h3 {
@@ -78,6 +84,8 @@ main {
     font-size: 18px;
     font-weight: 100;
     color: #000;
+    border-bottom: 2px solid  #99e2d0 ;
+    width: 10%;
 }
 .menu .fa-heart {
     font-size: 30px;
@@ -107,12 +115,6 @@ a {
 .entrees-container{
     width: 30%;
 }
-.entrees-container .title div {
-    height: 2px;
-    width: 7%;
-    background-color: #99e2d0;
-    margin-top: 15px;
-}
 
 .entree-container {
     background-color: white;
@@ -132,18 +134,25 @@ a {
 
 .entree h4 {
     width: 100%;
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-family:" Roboto";
+    font-family:'Roboto';
     font-weight: bold;
+    display: block;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+    margin-inline-end: 0px;
     
 }
 
 .entree h5 {
-   margin-top: 0;
-   font-family: "Roboto";
-   font-weight: 100;
-  
+    margin-top: 0;
+    font-family: 'Roboto';
+    font-weight: 50;
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .entree p {
@@ -182,16 +191,24 @@ a {
 
 .plat h4 {
     width: 100%;
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-family:" Roboto";
+    font-family:'Roboto';
     font-weight: bold;
+    display: block;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+    margin-inline-end: 0px;
 }
 
 .plat h5 {
-   margin-top: 0;
-   font-family: "Roboto";
-   font-weight: 100;
+    margin-top: 0;
+    font-family: 'Roboto';
+    font-weight: 50;
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .plat p {
@@ -231,16 +248,24 @@ a {
 
 .dessert h4 {
     width: 100%;
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-family:" Roboto";
+    font-family:'Roboto';
     font-weight: bold;
+    display: block;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+    margin-inline-end: 0px;
 }
 
 .dessert h5 {
-   margin-top: 0;
-   font-family: "Roboto";
-   font-weight: 100;
+    margin-top: 0;
+    font-family: 'Roboto';
+    font-weight: 50;
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 .dessert .price{
     font-weight: bold;
@@ -273,6 +298,10 @@ a {
     padding: 1rem;
     cursor: pointer;
     width: 30%;
+}
+.bouton:hover {
+    background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
+    box-shadow: 8px 8px 2px #acabab;
 }
 /* Footer */
 
@@ -332,7 +361,7 @@ footer a {
 .header h1 {
     margin-top:10px;
     padding: 0px;
-    font-family: Shrikhand;
+    font-family: 'Shrikhand';
     font-size: 30px;
     color: #000;
 }
@@ -340,6 +369,12 @@ footer a {
     display: flex;
     justify-content: center;
     height: 80px;
+    position: relative;
+}
+
+.header a {
+    position: absolute;
+    left: 5em;
 }
 
 .header img {
@@ -380,7 +415,7 @@ footer a {
 }
 .menu h2 {
     font-family: "Shrikhand";
-    font-size: 30px;
+    font-size: 25px;
     font-style: italic;
 }
 .menu h3 {
@@ -388,6 +423,8 @@ footer a {
     font-size: 18px;
     font-weight: 100;
     color: #000;
+    border-bottom: 2px solid  #99e2d0 ;
+    width: 10%;
 }
 .menu .fa-heart {
     font-size: 30px;
@@ -442,18 +479,26 @@ a {
 
 .entree h4 {
     width: 100%;
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-family:" Roboto";
+    font-family:'Roboto';
     font-weight: bold;
+    display: block;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+    margin-inline-end: 0px;
+    
     
 }
 
 .entree h5 {
-   margin-top: 0;
-   font-family: "Roboto";
-   font-weight: 100;
-  
+    margin-top: 0;
+    font-family: 'Roboto';
+    font-weight: 50;
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .entree p {
@@ -467,12 +512,7 @@ a {
  .plats-container{
     width: 45%;
  }
-.plats-container .title div {
-    height: 2px;
-    width: 7%;
-    background-color: #99e2d0;
-    margin-top: 15px;
-}
+
 
 .plat-container {
     background-color: white;
@@ -492,16 +532,24 @@ a {
 
 .plat h4 {
     width: 100%;
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-family:" Roboto";
+    font-family:'Roboto';
     font-weight: bold;
+    display: block;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+    margin-inline-end: 0px;
 }
 
 .plat h5 {
-   margin-top: 0;
-   font-family: "Roboto";
-   font-weight: 100;
+    margin-top: 0;
+    font-family: 'Roboto';
+    font-weight: 50;
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .plat p {
@@ -542,16 +590,24 @@ a {
 
 .dessert h4 {
     width: 100%;
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-family:" Roboto";
+    font-family:'Roboto';
     font-weight: bold;
+    display: block;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+    margin-inline-end: 0px;
 }
 
 .dessert h5 {
-   margin-top: 0;
-   font-family: "Roboto";
-   font-weight: 100;
+    margin-top: 0;
+    font-family: 'Roboto';
+    font-weight: 50;
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 .dessert .price{
     font-weight: bold;
@@ -559,6 +615,7 @@ a {
 
 .dessert p {
     margin-top: 0;
+    font-weight: bold;
  }
 
  .dessert .price{
@@ -584,6 +641,10 @@ a {
     padding: 1rem;
     cursor: pointer;
     width: 30%;
+}
+.bouton:hover {
+    background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
+    box-shadow: 8px 8px 2px #acabab;
 }
 /* Footer */
 
@@ -645,7 +706,7 @@ footer a {
 .header h1 {
     margin-top:10px;
     padding: 0px;
-    font-family: Shrikhand;
+    font-family: 'Shrikhand';
     font-size: 30px;
     color: #000;
 }
@@ -653,6 +714,12 @@ footer a {
     display: flex;
     justify-content: center;
     height: 80px;
+    position: relative;
+}
+
+.header a {
+    position: absolute;
+    left: 5em;
 }
 
 .header img {
@@ -679,8 +746,8 @@ footer a {
     align-items: center;
 }
 .menu h2 {
-    font-family: "Shrikhand";
-    font-size: 30px;
+    font-family: 'Shrikhand';
+    font-size: 25px;
     font-style: italic;
 }
 .menu h3 {
@@ -688,6 +755,9 @@ footer a {
     font-size: 18px;
     font-weight: 100;
     color: #000;
+    border-bottom: 2px solid  #99e2d0 ;
+    width: 10%;
+   
 }
 .menu .fa-heart {
     font-size: 30px;
@@ -706,6 +776,7 @@ a {
     top: 20px;
     right: 45px;
     font-size: x-large;
+   
 }
 
 .far {
@@ -714,51 +785,85 @@ a {
 }
 
 /*entrees*/
-.entrees-container .title div {
-    height: 2px;
-    width: 7%;
-    background-color: #99e2d0;
-    margin-top: 15px;
-}
 
 .entree-container {
+    display: flex;
+    justify-content: space-between;
     background-color: white;
     box-shadow: 6px 6px 26px lightgrey;
     border-radius: 15px;
-    margin-top:40px ;
+    margin-top:20px ;
     cursor: pointer;
+    
+}
+
 }
 
 .entree {
-    width: 90%;
+    width: 93%;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap;   
 }
 
 .entree h4 {
     width: 100%;
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-family:" Roboto";
+    font-family:'Roboto';
     font-weight: bold;
+    display: block;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+    margin-inline-end: 0px;
     
 }
 
 .entree h5 {
-   margin-top: 0;
-   font-family: "Roboto";
-   font-weight: 100;
-  
+    margin-top: 0;
+    font-family: 'Roboto';
+    font-weight: 50;
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .entree p {
     margin-top: 0;
     font-weight: bold;
-   
  }
 
+.selection {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #f6f6f6;
+    background-color: #99e2d0;
+    font-size: xx-large;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    transform: translateX(100px);
+    transition: all 700ms;
+}
+
+.selection:hover .fa-check-circle  {
+    transform: rotate(359deg);
+    transition: transform 700ms;
+    
+}
+
+.entree-container:hover .selection {
+    display: flex;
+    width: 25%;
+    transform: translateX(0px);
+    cursor: pointer;
+}
+
+.entree-container:hover .entree {
+    width: 65%;
+}
 
  /*plats*/
 .plats-container .title div {
@@ -772,7 +877,7 @@ a {
     background-color: white;
     box-shadow: 6px 6px 26px lightgrey;
     border-radius: 15px;
-    margin-top:40px ;
+    margin-top:20px ;
     cursor: pointer;
 }
 
@@ -786,20 +891,30 @@ a {
 
 .plat h4 {
     width: 100%;
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-family:" Roboto";
+    font-family:'Roboto';
     font-weight: bold;
+    display: block;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+    margin-inline-end: 0px;
 }
 
 .plat h5 {
-   margin-top: 0;
-   font-family: "Roboto";
-   font-weight: 100;
+    margin-top: 0;
+    font-family: 'Roboto';
+    font-weight: 50;
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
 }
 
 .plat p {
     margin-top: 0;
+    font-weight: bold;
  }
 .plat .price{
     font-weight: bold;
@@ -817,7 +932,7 @@ a {
     background-color: white;
     box-shadow: 6px 6px 26px lightgrey;
     border-radius: 15px;
-    margin-top:40px ;
+    margin-top:20px ;
     cursor: pointer;
 }
 
@@ -831,20 +946,29 @@ a {
 
 .dessert h4 {
     width: 100%;
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-family:" Roboto";
+    font-family:'Roboto';
     font-weight: bold;
+    display: block;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+    margin-inline-end: 0px;
 }
 
 .dessert h5 {
-   margin-top: 0;
-   font-family: "Roboto";
-   font-weight: 100;
+    margin-top: 0;
+    font-family: 'Roboto';
+    font-weight: 50;
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .dessert p {
     margin-top: 0;
+    font-weight: bold;
  }
 .dessert .price{
     font-weight: bold;
@@ -869,6 +993,10 @@ a {
     padding: 1rem;
     cursor: pointer;
     width: 50%;
+}
+.bouton:hover {
+    background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
+    box-shadow: 8px 8px 2px #acabab;
 }
 /* Footer */
 

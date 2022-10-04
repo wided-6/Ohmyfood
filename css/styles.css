@@ -20,7 +20,7 @@ body {
 }
 
 .header img {
-    width: 50%;
+    width: 250px;
     margin: auto;
     margin-top: 20px;
 }
@@ -33,7 +33,7 @@ body {
     justify-content: center;
     margin-top: 5px;
     align-items: center;
-    height: 80px;
+    height: 50px;
 }
 
 .local form {
@@ -60,12 +60,12 @@ body {
 }
 
 .local .fa-map-marker-alt {
-    height: 40px;
+    height:40px;
     width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 18px;
 }
 
 .presentation {
@@ -106,9 +106,13 @@ body {
     border-radius: 50px;
     border: none;
     box-shadow:6px 6px 2px lightgrey;
-   
     cursor: pointer;
  }
+
+ .bouton:hover {
+    background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
+    box-shadow: 8px 8px 2px #acabab;
+}
 
    /*fonctionnement*/
 
@@ -128,6 +132,13 @@ body {
     margin-right: auto;
     margin-bottom:5%;
     cursor: pointer;
+}
+
+.step:hover {
+    background-color:#f2eafb;
+    }
+.step:hover > .icon {
+    color: #9356DC;
 }
 
 .fonctionnement .number {
@@ -334,7 +345,7 @@ footer a {
 }
 
 .header img {
-    width: 50%;
+    width: 200px;
     margin: auto;
     margin-top: 20px;
 }
@@ -347,7 +358,7 @@ footer a {
     justify-content: center;
     margin-top: 5px;
     align-items: center;
-    height: 80px;
+    height: 50px;
 }
 
 .local form {
@@ -379,7 +390,7 @@ footer a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 18px;
 }
 
 .presentation {
@@ -422,6 +433,10 @@ footer a {
     transition: 250ms;
     cursor: pointer;
  }
+ .bouton:hover {
+    background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
+    box-shadow: 8px 8px 2px #acabab;
+}
 
    /*fonctionnement*/
 
@@ -443,6 +458,12 @@ footer a {
     cursor: pointer;
 }
 
+.step:hover {
+    background-color:#f2eafb;
+    }
+.step:hover > .icon {
+    color: #9356DC;
+}
 .fonctionnement .number {
     border: #F2F2F2 solid 2px;
     border-radius: 50%;
@@ -521,8 +542,8 @@ footer a {
     background-color: white;
     margin-bottom: 30px;
     text-decoration: none;
-   margin: auto;
-  margin-top: 30px;
+    margin: auto;
+    margin-top: 30px;
     object-fit: cover;
    
 }
@@ -648,7 +669,7 @@ footer a {
 }
 
 .header img {
-    width: 50%;
+    width: 200px;
     margin: auto;
     margin-top: 20px;
 }
@@ -661,7 +682,7 @@ footer a {
     justify-content: center;
     margin-top: 5px;
     align-items: center;
-    height: 80px;
+    height: 50px;
 }
 
 .local form {
@@ -693,7 +714,7 @@ footer a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 18px;
 }
 
 /*reservation*/
@@ -727,6 +748,10 @@ footer a {
     transition: 250ms;
     cursor: pointer;
  }
+ .bouton:hover {
+    background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
+    box-shadow: 8px 8px 2px #acabab;
+}
 
    /*fonctionnement*/
 
@@ -746,6 +771,13 @@ footer a {
     margin-right: auto;
     margin-bottom:5%;
     cursor: pointer;
+}
+
+.step:hover {
+    background-color:#f2eafb;
+    }
+.step:hover > .icon {
+    color: #9356DC;
 }
 
 .fonctionnement .number {
@@ -780,9 +812,7 @@ footer a {
      
 }
 
-.fonctionnement h2{
-    margin-left: 5%;
-}
+
 
 /*restaurants*/
 
