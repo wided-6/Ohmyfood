@@ -39,7 +39,6 @@ body {
 .local form {
     display: flex;
     height: 50px;
-    background-color: none;
 }
 
 .local form input {
@@ -259,8 +258,12 @@ body {
     font-size: 30px;
 }
 
-.color-purple {
-    color: #FF79DA ;
+.fa-heart:hover {
+    font-weight: 900;
+    font-weight: 900;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .option-container {
@@ -364,7 +367,6 @@ footer a {
 .local form {
     display: flex;
     height: 50px;
-    background-color: none;
 }
 
 .local form input {
@@ -583,8 +585,12 @@ footer a {
     font-size: 30px;
 }
 
-.color-purple {
-    color: #FF79DA ;
+.fa-heart:hover {
+    font-weight: 900;
+    font-weight: 900;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .option-container {
@@ -688,7 +694,6 @@ footer a {
 .local form {
     display: flex;
     height: 50px;
-    background-color: none;
 }
 
 .local form input {
@@ -889,8 +894,12 @@ footer a {
     font-size: 30px;
 }
 
-.color-purple {
-    color: #FF79DA ;
+.fa-heart:hover {
+    font-weight: 900;
+    font-weight: 900;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .option-container {
