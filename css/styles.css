@@ -7,6 +7,62 @@ body {
     font-family: 'Roboto';
 }
 
+main {
+    animation: hide 3s linear forwards;
+}
+
+footer {
+    animation: hide 3s linear forwards;
+}
+.chargement {
+    border-top: 10px solid #2c3e50;
+    border-bottom: 10px solid #e74c3c;
+    border-left: 10px solid limegreen;
+    border-right: 10px solid hotpink;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 1.5s linear forwards;
+    -o-animation: spin 1.5s linear forwards;
+    animation: spin  1.5s linear forwards;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0;right: 0; bottom: 0;
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+
+    }
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+@keyframes hide {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.1;
+    }
+    75%{
+        opacity: 0.4;
+    }
+    100%{
+        opacity: 1;
+    } 
+}
 /* Version  Desktop */
 @media screen and (min-width: 992px) {
 
@@ -108,7 +164,7 @@ body {
     cursor: pointer;
  }
 
- .bouton:hover {
+ .reservation .bouton:hover {
     background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
     box-shadow: 8px 8px 2px #acabab;
 }
@@ -217,8 +273,8 @@ body {
     background-color: white;
     margin-bottom: 30px;
     text-decoration: none;
-   margin: auto;
-  margin-top: 30px;
+    margin: auto;
+    margin-top: 30px;
     object-fit: cover;
    
 }
@@ -435,7 +491,7 @@ footer a {
     transition: 250ms;
     cursor: pointer;
  }
- .bouton:hover {
+ .reservation .bouton:hover {
     background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
     box-shadow: 8px 8px 2px #acabab;
 }
@@ -753,7 +809,7 @@ footer a {
     transition: 250ms;
     cursor: pointer;
  }
- .bouton:hover {
+ .reservation .bouton:hover {
     background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
     box-shadow: 8px 8px 2px #acabab;
 }
