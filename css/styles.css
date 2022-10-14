@@ -35,6 +35,7 @@ footer {
     }
     100% {
         -webkit-transform: rotate(360deg);
+        opacity: 0;
 
     }
 }
@@ -380,7 +381,6 @@ footer a {
 
 .section-footer h2 { 
     font-family: "Shrikhand";
-    font-style: italic;
     color: white;
     font-size: 20px;
     
@@ -707,7 +707,6 @@ footer a {
 
 .section-footer h2 { 
     font-family: "Shrikhand";
-    font-style: italic;
     color: white;
     font-size: 20px;
     
@@ -1016,7 +1015,6 @@ footer a {
 
 .section-footer h2 { 
     font-family: "Shrikhand";
-    font-style: italic;
     color: white;
     font-size: 20px;
     
